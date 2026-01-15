@@ -213,13 +213,14 @@
         </div>
       </section>
 
-      <section class="section payment">
+      <section class="section payment" id="payment">
         <div class="payment-card">
           <h2>Metode Pembayaran</h2>
           <p>Kami menerima pembayaran melalui:</p>
           <div class="payment-list">
-            <span>QRIS (Ovo, GoPay, ShopeePay, LinkAja, Bank)</span>
-            <span>DANA</span>
+            <a class="pay-pill" href="#qris-modal"
+              >QRIS (Ovo, GoPay, ShopeePay, LinkAja, Bank)</a
+            >
           </div>
         </div>
         <div class="cta-footer">
@@ -230,5 +231,17 @@
         </div>
       </section>
     </main>
+
+    <div id="qris-modal" class="modal">
+      <div class="modal-card">
+        <a class="modal-close" href="#payment">Tutup</a>
+        <h3>QRIS Zenith Cloud</h3>
+        <img
+          src="https://files.catbox.moe/zq94rh.jpg"
+          alt="QRIS Zenith Cloud"
+        />
+      </div>
+      <a class="modal-backdrop" href="#payment" aria-label="Tutup QRIS"></a>
+    </div>
   </body>
 </html>

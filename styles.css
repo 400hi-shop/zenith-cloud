@@ -321,16 +321,70 @@ h2 {
   font-weight: 600;
 }
 
-.payment-list span {
+.payment-list span,
+.payment-list .pay-pill {
   padding: 8px 14px;
   border-radius: 999px;
   background: rgba(255, 255, 255, 0.12);
+}
+
+.payment-list .pay-pill {
+  color: #ffffff;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.25);
 }
 
 .cta-footer {
   display: flex;
   flex-direction: column;
   gap: 18px;
+}
+
+.modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  place-items: center;
+  z-index: 20;
+}
+
+.modal:target {
+  display: grid;
+}
+
+.modal-card {
+  position: relative;
+  background: #ffffff;
+  color: var(--ink);
+  padding: 24px;
+  border-radius: 20px;
+  box-shadow: var(--shadow);
+  max-width: min(520px, 90vw);
+  width: 100%;
+  z-index: 2;
+}
+
+.modal-card img {
+  width: 100%;
+  border-radius: 16px;
+  margin-top: 12px;
+}
+
+.modal-close {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  text-decoration: none;
+  font-weight: 600;
+  color: var(--muted);
+}
+
+.modal-backdrop {
+  position: absolute;
+  inset: 0;
+  background: rgba(16, 14, 20, 0.6);
+  backdrop-filter: blur(2px);
+  z-index: 1;
 }
 
 @keyframes fade-up {
