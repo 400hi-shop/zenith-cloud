@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Konfirmasi Pembayaran</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Konfirmasi Pembayaran</p>
+        <h1 id="confirm-title">Upload bukti transfer</h1>
+        <p id="confirm-price" class="lead"></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card">
+        <form id="confirm-form">
+          <div class="field">
+            <label for="recipient">Penerima Akun (Telegram/No HP)</label>
+            <input
+              id="recipient"
+              name="recipient"
+              type="text"
+              placeholder="@username atau 08xxxx"
+              required
+            />
+          </div>
+          <div class="field">
+            <label for="proof">Bukti Transfer (JPG/PNG)</label>
+            <input id="proof" name="proof" type="file" accept="image/*" required />
+          </div>
+          <input id="productName" name="productName" type="hidden" />
+          <input id="productPrice" name="productPrice" type="hidden" />
+          <button class="btn" type="submit">Kirim Konfirmasi</button>
+          <a class="btn secondary" href="index.html">Kembali</a>
+          <p id="status" class="status"></p>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>

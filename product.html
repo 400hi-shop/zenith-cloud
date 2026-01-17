@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Detail Produk</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="bg-orb orb-1"></div>
+    <div class="bg-orb orb-2"></div>
+    <div class="bg-grid"></div>
+    <header class="hero">
+      <div class="container">
+        <p class="eyebrow">Detail Produk</p>
+        <h1 id="product-name">Produk</h1>
+        <p id="product-price" class="lead"></p>
+      </div>
+    </header>
+
+    <main class="container">
+      <section class="card detail">
+        <div>
+          <h2>Bayar via QRIS</h2>
+          <p class="notice">
+            Scan QRIS di bawah ini sesuai harga produk, lalu lanjut ke konfirmasi.
+          </p>
+          <img
+            class="qris"
+            src="https://files.catbox.moe/zq94rh.jpg"
+            alt="QRIS Zenith Cloud"
+          />
+        </div>
+        <div>
+          <h2>Konfirmasi Pembayaran</h2>
+          <p class="notice">
+            Setelah transfer, klik tombol di bawah untuk upload bukti.
+          </p>
+          <a id="confirm-link" class="btn" href="confirm.html">Konfirmasi</a>
+          <p class="notice">Format bukti: JPG/PNG. Maks 5MB.</p>
+          <a class="btn secondary" href="index.html">Kembali</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
