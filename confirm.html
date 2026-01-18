@@ -18,8 +18,16 @@
     <div class="bg-grid"></div>
     <header class="hero">
       <div class="container">
-        <p class="eyebrow">Konfirmasi Pembayaran</p>
-        <h1 id="confirm-title">Upload bukti transfer</h1>
+        <div class="hero-top">
+          <p class="eyebrow">Konfirmasi Pembayaran</p>
+          <button id="theme-toggle" class="btn secondary" type="button">
+            Mode Gelap
+          </button>
+        </div>
+        <h1 id="confirm-title">Konfirmasi Pembayaran</h1>
+        <p class="lead">
+          Setelah transfer, kirim bukti pembayaran lewat WhatsApp atau Telegram.
+        </p>
         <p id="confirm-price" class="lead"></p>
       </div>
     </header>
@@ -27,23 +35,16 @@
     <main class="container">
       <section class="card">
         <form id="confirm-form">
-          <div class="field">
-            <label for="recipient">Penerima Akun (Telegram/No HP)</label>
-            <input
-              id="recipient"
-              name="recipient"
-              type="text"
-              placeholder="@username atau 08xxxx"
-              required
-            />
-          </div>
-          <div class="field">
-            <label for="proof">Bukti Transfer (JPG/PNG)</label>
-            <input id="proof" name="proof" type="file" accept="image/*" required />
-          </div>
           <input id="productName" name="productName" type="hidden" />
           <input id="productPrice" name="productPrice" type="hidden" />
-          <button class="btn" type="submit">Kirim Konfirmasi</button>
+          <div class="stack">
+            <a id="wa-link" class="btn" href="#" target="_blank"
+              >Kirim Bukti via WhatsApp</a
+            >
+            <a id="tg-link" class="btn secondary" href="#" target="_blank"
+              >Kirim Bukti via Telegram</a
+            >
+          </div>
           <a class="btn secondary" href="index.html">Kembali</a>
           <p id="status" class="status"></p>
         </form>

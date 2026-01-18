@@ -18,7 +18,12 @@
     <div class="bg-grid"></div>
     <header class="hero">
       <div class="container">
-        <p class="eyebrow">Detail Produk</p>
+        <div class="hero-top">
+          <p class="eyebrow">Detail Produk</p>
+          <button id="theme-toggle" class="btn secondary" type="button">
+            Mode Gelap
+          </button>
+        </div>
         <h1 id="product-name">Produk</h1>
         <p id="product-price" class="lead"></p>
       </div>
@@ -31,11 +36,7 @@
           <p class="notice">
             Scan QRIS di bawah ini sesuai harga produk, lalu lanjut ke konfirmasi.
           </p>
-          <img
-            class="qris"
-            src="https://files.catbox.moe/zq94rh.jpg"
-            alt="QRIS Zenith Cloud"
-          />
+          <img class="qris" data-qris alt="QRIS Zenith Cloud" />
         </div>
         <div>
           <h2>Konfirmasi Pembayaran</h2>
@@ -43,7 +44,6 @@
             Setelah transfer, klik tombol di bawah untuk upload bukti.
           </p>
           <a id="confirm-link" class="btn" href="confirm.html">Konfirmasi</a>
-          <p class="notice">Format bukti: JPG/PNG. Maks 5MB.</p>
           <a class="btn secondary" href="index.html">Kembali</a>
         </div>
       </section>
