@@ -107,6 +107,21 @@ html[data-theme="dark"] .bg-grid {
   gap: 16px;
 }
 
+.brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.logo {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  object-fit: cover;
+  border: 1px solid var(--line);
+  box-shadow: var(--shadow);
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.18em;
